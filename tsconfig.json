@@ -15,6 +15,7 @@
     "allowJs": true,
     "paths": {
       "@/*": ["./src"],
+      "mn/*": ["./node_modules"],
     },
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

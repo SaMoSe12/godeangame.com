@@ -1,0 +1,61 @@
+@import '_variables'
+:root
+    font-family: 'Inter', sans-serif
+    line-height: 1.5
+    font-weight: 400
+
+    color-scheme: light dark
+    color: invert($tx)
+    background-color: invert($bg)
+
+    font-synthesis: none
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -webkit-text-size-adjust: 100%
+
+a
+    font-weight: 500
+    color: $blue
+    text-decoration: inherit
+
+    &:hover
+        color: darken($blue,15%)
+    &.navbar-item, &.navbar-link
+        color: invert($tx)
+        &:focus, &:focus-within, &:hover, &.is-active
+            background-color: inherit !important
+            color: $blue
+
+h1
+    font-size: 3.2em
+    line-height: 1.1
+    font-family: 'Audiowide'
+    text-align: center
+    margin: 2rem 0 2rem 0
+    color: invert($tx)
+
+nav
+    background-color: inherit !important
+
+#app
+    max-width: 1280px
+    margin: 0 auto
+    padding: 2rem
+    min-height: 100svh
+
+@media (prefers-color-scheme: light)
+    :root
+        color: $tx
+        background-color: $bg
+
+    a
+        &:hover
+            color: lighten($blue,15%)
+        &.navbar-item, &.navbar-link
+            color: $tx
+    h1
+        color: $tx
+
+    button
+        background-color: darken($bg,10%)

@@ -1,7 +1,7 @@
 <template>
-    <h1  >About</h1>
+    <h1>Contact</h1>
     <p>
-        About
+        Contacto
     </p>
 </template>
 
