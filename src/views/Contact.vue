@@ -1,7 +1,7 @@
 <template>
-    <h1>Contact</h1>
-    <p>
-        Contacto
+    <h1 class="title is-1">Contact</h1>
+    <p class="subtitle has-text-centered has-text-grey">
+        Contactanos
     </p>
 </template>
 
