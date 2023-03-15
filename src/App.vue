@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="mainNav">
     <div class="navbar-brand">
       <router-link :to="{ name: 'home' }" class="navbar-item">
-        <img src="@/assets/img/GoDeanLogo.png" alt="logo">
+        <img src="@/assets/img/godean-website-favicon-black.png" alt="logo">
       </router-link>
       <a role="button" class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
         <span aria-hidden="true"></span>

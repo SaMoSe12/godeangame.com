@@ -1,17 +1,22 @@
 @import 'bulma/sass/utilities/mixins'
+@import '_variables'
 
-#Home
-    .reverse-columns
-        @include mobile
-            flex-direction: column-reverse
-            display: flex
+hr.content-divider
+    max-width: 155px
+    height: 5px
+    background: linear-gradient(90deg, transparent 5% , $red 20%, $red 80%, transparent )
 
-    .titled
-        font-size: 58px !important
-        font-weight: 400 !important
-        line-height: 64px !important
-    
-    .subtitled
-        font-size: 22px !important
-        font-weight: 400 !important
-        line-height: !important
+#paralax-1
+    background: url('https://picsum.photos/id/96/2000.webp')
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    border-bottom: 10px solid $blue
+
+    hr.content-divider
+        background: linear-gradient(90deg, transparent, $blue 20%, $blue 80%, transparent)
+    .container
+        h1, h2
+            text-shadow: 2px 2px 2px white
+            user-select: none
